@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white"
+    android:minHeight="230dp"
+    android:orientation="horizontal"
+    android:visibility="visible"
+    android:weightSum="2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/base_fare_receipt"
+            android:layout_marginTop="30dp"
+            android:textColor="#6B6B6B"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/txt_receipt_page_kilometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/label_distance_fare"
+            android:textColor="#6B6B6B"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/txt_receipt_page_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/label_time_fare"
+            android:textColor="#6B6B6B"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dashed_line_landing_page"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/sub_total_receipt"
+            android:textColor="#6B6B6B"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/promotion_receipt"
+            android:textColor="#6B6B6B"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dashed_line_landing_page"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/cash_receipt"
+            android:textColor="#6B6B6B"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="end"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txt_receipt_page_base_fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Base rate"
+            android:layout_marginTop="30dp"
+            android:textSize="16sp"
+            android:textColor="#6B6B6B"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+        <TextView
+            android:id="@+id/txt_receipt_page_kilometer_fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Kilometer Fare"
+            android:textColor="#6B6B6B"
+            android:paddingLeft="20dp"
+            android:textSize="16sp"
+            android:paddingRight="20dp"/>
+
+        <TextView
+            android:id="@+id/txt_receipt_page_minute_fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#6B6B6B"
+            android:text="Minute rate"
+            android:paddingLeft="20dp"
+            android:textSize="16sp"
+            android:paddingRight="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dashed_line_landing_page"/>
+
+        <TextView
+            android:id="@+id/txt_receipt_page_subtotal_fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#6B6B6B"
+            android:text="Subtotal rate"
+            android:paddingLeft="20dp"
+            android:textSize="16sp"
+            android:paddingRight="20dp"/>
+
+        <TextView
+            android:id="@+id/txt_receipt_page_promotion_fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#6B6B6B"
+            android:text="Promotion rate"
+            android:paddingLeft="20dp"
+            android:textSize="16sp"
+            android:paddingRight="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dashed_line_landing_page"/>
+
+        <TextView
+            android:id="@+id/txt_receipt_page_total_fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Total rate"
+            android:textColor="@color/black"
+            android:paddingLeft="20dp"
+            android:textSize="16sp"
+            android:paddingRight="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

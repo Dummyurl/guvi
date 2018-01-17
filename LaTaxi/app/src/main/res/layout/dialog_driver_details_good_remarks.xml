@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:minWidth="300dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="80dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Your Last Trip"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/txt_rating_page_good_remarks_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="Date"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/txt_rating_page_good_remarks_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="50dp"
+            android:text="Time"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/NestedScrollBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="50dp">
+
+            <ImageView
+                android:id="@+id/iv_rating_page_bad_remarks_driver_photo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:background="@drawable/red_dotted_circle"
+                android:padding="20dp"
+                android:src="@drawable/ic_dummy_photo"/>
+
+            <RatingBar
+                android:id="@+id/rb_good_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"/>
+
+            <!--style="?android:attr/ratingBarStyleSmall"-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:text="@string/excellent"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:text="@string/what_went_well"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="@string/please_take_a_few_moments_to_give_us_feedback_on_your_recent_ride_with_the_la_taxi_driver_bad_feedback"
+                android:textColor="#BABABA"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/txt_rating_page_good_remarks_service"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_round_edges_gray"
+                    android:gravity="center"
+                    android:text="@string/service_bad_remark"
+                    android:textColor="@color/text_feedback"/>
+
+                <TextView
+                    android:id="@+id/txt_rating_page_good_remarks_cleanliness"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_round_edges_gray"
+                    android:gravity="center"
+                    android:text="@string/cleanliness_bad_remark"
+                    android:textColor="@color/text_feedback"/>
+
+                <TextView
+                    android:id="@+id/txt_rating_page_good_remarks_driving"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_round_edges_gray"
+                    android:gravity="center"
+                    android:text="@string/driving_bad_remark"
+                    android:textColor="@color/text_feedback"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/txt_rating_page_good_remarks_comfort"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_round_edges_gray"
+                    android:gravity="center"
+                    android:text="@string/comfort_bad_remark"
+                    android:textColor="@color/text_feedback"/>
+
+                <TextView
+                    android:id="@+id/txt_rating_page_good_remarks_car_quality"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_round_edges_gray"
+                    android:gravity="center"
+                    android:text="@string/car_quality_bad_remark"
+                    android:textColor="@color/text_feedback"/>
+
+                <TextView
+                    android:id="@+id/txt_rating_page_good_remarks_other"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_round_edges_gray"
+                    android:gravity="center"
+                    android:text="@string/other_bad_remark"
+                    android:textColor="@color/text_feedback"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="@string/say_thanks_good"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/text_feedback"/>
+
+            <Button
+                android:id="@+id/btn_driver_good_remarks_submit"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_round_edges_black"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
